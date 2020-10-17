@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropDown" customModule="DropDown" customModuleProvider="target">
+            <connections>
+                <outlet property="backGroundView" destination="ahH-Ux-c2y" id="6eD-zK-UGz"/>
+                <outlet property="stackView" destination="DOQ-WE-Qgn" id="fFm-z3-rpE"/>
+                <outlet property="textInputView" destination="9rT-pw-kk7" id="gCw-st-gee"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="555" height="244"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahH-Ux-c2y">
+                    <rect key="frame" x="0.0" y="0.0" width="555" height="244"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-pw-kk7" customClass="InputTextField" customModule="DropDown" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="555" height="56"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="ThK-G8-VZe"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DOQ-WE-Qgn">
+                            <rect key="frame" x="0.0" y="56" width="555" height="188"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="500" id="nn6-Un-UKe"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9rT-pw-kk7" secondAttribute="trailing" id="L2r-tO-hgv"/>
+                        <constraint firstItem="DOQ-WE-Qgn" firstAttribute="top" secondItem="9rT-pw-kk7" secondAttribute="bottom" id="LPQ-W6-PhI"/>
+                        <constraint firstAttribute="bottom" secondItem="DOQ-WE-Qgn" secondAttribute="bottom" id="QCo-fR-Ce8"/>
+                        <constraint firstItem="9rT-pw-kk7" firstAttribute="top" secondItem="ahH-Ux-c2y" secondAttribute="top" id="Vdw-A3-qf6"/>
+                        <constraint firstAttribute="trailing" secondItem="DOQ-WE-Qgn" secondAttribute="trailing" id="ey4-SV-3vh"/>
+                        <constraint firstItem="DOQ-WE-Qgn" firstAttribute="leading" secondItem="ahH-Ux-c2y" secondAttribute="leading" id="gRV-B7-dMU"/>
+                        <constraint firstItem="9rT-pw-kk7" firstAttribute="leading" secondItem="ahH-Ux-c2y" secondAttribute="leading" id="hYh-gG-pHu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ahH-Ux-c2y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Emj-uj-6xp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ahH-Ux-c2y" secondAttribute="trailing" id="p8a-P7-ynm"/>
+                <constraint firstAttribute="bottom" secondItem="ahH-Ux-c2y" secondAttribute="bottom" id="qmq-kD-pNP"/>
+                <constraint firstItem="ahH-Ux-c2y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uuZ-yR-WDw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="215.21739130434784" y="245.75892857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
